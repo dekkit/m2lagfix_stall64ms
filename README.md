@@ -13,6 +13,7 @@ Updated to reduce the Stall detection wait time from 128ms down to 64ms.  This w
 
 Changes:
  - 16/05/2026 - Replaced line 224 "If GetTickCount - STALL_Tick >= 128 Then" with "If GetTickCount - STALL_Tick >= 64 Then" .
+ - 16/05/2026 - Added Socket.cls to get the code to complile in VB6 professional (this added "Public ProtoF As Long, Public Status As Byte, Public Handle As Long" and was recommended by copilot to address VB6 compiling errors with winsock.bas, it seemed to do the trick!)
 
 
 Note: 
