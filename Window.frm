@@ -221,7 +221,7 @@ Private Sub Timer_Timer()
     End If
   ElseIf (STALL_Enabled And LINK_Enabled) Then
     ' if waited long enough
-    If GetTickCount - STALL_Tick >= 128 Then
+    If GetTickCount - STALL_Tick >= 64 Then
       Winsock.SendUDP UDP_Socket_RX, LAG_Packet, UDP_RemoteAddress_RX
       STALL_Tick = GetTickCount
       

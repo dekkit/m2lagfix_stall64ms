@@ -11,8 +11,6 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = True
 Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = False
-Option Explicit
-
-Public Handle As Long
+Public ProtoF As Long
 Public Status As Byte
-Public ProtoF As Byte
+Public Handle As Long
